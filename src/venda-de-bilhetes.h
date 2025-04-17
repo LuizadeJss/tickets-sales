@@ -1,4 +1,6 @@
 /*ARQUIVO VENDA-DE-BILHETES.H*/
+#include <stdbool.h>
+
 const int QUANTIDADE_BILHETES_MAX = 5;
 const int VALOR_INGRESSO = 30;
 

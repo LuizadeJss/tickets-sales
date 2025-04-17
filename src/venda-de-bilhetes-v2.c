@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdbool.h>
 #include "venda-de-bilhetes.h"
 
 int main()
