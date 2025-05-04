@@ -1,0 +1,31 @@
+name: Integração Contínua com Miunit
+
+on:
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches: 
+      -main
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Faz o checkout do código
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      #Prepara o ambiente para rodar aplicações em C 
+      - name: Install build essentials
+        run: sudo apt-get install build-essential
+
+      #Compila o projeto
+      - name: Build the project
+        run: gcc -o unitario tickets-sales/test/test.c
+
+      #Executa o teste
+      - name: Run unit tests
+        run: ./unitario
+        
