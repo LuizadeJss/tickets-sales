@@ -6,7 +6,7 @@ on:
       - main
   pull_request:
     branches: 
-      -main
+      - main
       
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
 
       #Compila o projeto
       - name: Build the project
-        run: gcc -o unitario tickets-sales/test/test.c
+        run: gcc -o unitario test/test.c
 
       #Executa o teste
       - name: Run unit tests
