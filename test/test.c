@@ -47,7 +47,7 @@ MU_TEST(test_calculoPorIdade_acima){
     mu_assert_double_eq(-1, preco);
 }
 
-//Teste de integração continua
+
 
 MU_TEST_SUITE(test_suite) {
     MU_RUN_TEST(test_veriIngressos_normal);
