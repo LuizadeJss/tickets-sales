@@ -43,9 +43,12 @@ MU_TEST(test_calculoPorIdade_abaixo){
 }
 //Teste 8: Verifica de o tratamento para o cálculo de preço por idade com idade acima está funcionando corretamente
 MU_TEST(test_calculoPorIdade_acima){
+    
     double preco = calcularPrecoPorIdade(201, 3);
     mu_assert_double_eq(-1, preco);
 }
+
+//
 
 MU_TEST_SUITE(test_suite) {
     MU_RUN_TEST(test_veriIngressos_normal);
